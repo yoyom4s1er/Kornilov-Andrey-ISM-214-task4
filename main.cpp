@@ -4,7 +4,6 @@
 int main()
 {
 	lorry test = lorry(100, "Volvo", 4, 15, 500);
-	lorry test = lorry(100, "BMW", 4, 15, 5000);
 	std::cout << "Mark is " << test.get_mark() << "\n";
 	std::cout << "Speed is " << test.get_speed() << "\n";
 	std::cout << "Pas is " << test.get_pas() << "\n";
