@@ -17,15 +17,21 @@ int vehicle::get_pas() const {
 }
 
 void vehicle::set_speed(const double speed) {
-	this->speed = speed;
+	if (speed >= 0) {
+		this->speed = speed;
+	}
 }
 
 void vehicle::set_mark(const std::string mark) {
-	this->mark = mark;
+	if (mark != "") {
+		this->mark = mark;
+	}
 }
 
 void vehicle::set_pas(const int pas) {
-	this->pas = pas;
+	if (pas > 0) {
+		this->pas = pas;
+	}
 }
 
 double vehicle::get_time_to_place(const double distance) {
