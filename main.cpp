@@ -10,6 +10,10 @@ int main()
 	std::cout << "Fuel rate per 100 km is " << test.get_fuel_rate(100) << "\n";
 	std::cout << "Load capacity is " << test.get_load_capacity() << "\n";
 
+	test.set_speed(-10);
+	test.set_mark("");
+	test.set_pas(-10);
+
 
 
 	/**
