@@ -56,17 +56,17 @@ class vehicle {
 		/**
 		 * \brief сеттер значения скорости
 		 */
-		void set_speed(const double speed);
+		void set_speed(const double& speed);
 
 		/**
 		 * \brief сеттер названия марки
 		 */
-		void set_mark(const std::string mark);
+		void set_mark(const std::string& mark);
 
 		/**
 		 * \brief сеттер кол-ва пассажиров
 		 */
-		void set_pas(const int pas);
+		void set_pas(const int& pas);
 
 		/**
 		 * \brief вычисление времени движения на заданное расстояние
@@ -140,7 +140,7 @@ class car : public vehicle {
 		/**
 		 * \brief Сеттер коэффициента расхода топлива
 		 */
-		void set_ratio(const double ratio);
+		void set_ratio(const double& ratio);
 };
 
 class lorry : public vehicle {
@@ -192,10 +192,10 @@ public:
 	/**
 	 * \brief Сеттер коэффициента расхода топлива
 	 */
-	void set_ratio(const double ratio);
+	void set_ratio(const double& ratio);
 
 	/**
 	 * \brief сеттер грузоподъемности
 	 */
-	void set_load_capacity(const double load_capacity);
+	void set_load_capacity(const double& load_capacity);
 };
