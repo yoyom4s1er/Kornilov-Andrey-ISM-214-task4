@@ -31,7 +31,7 @@ class vehicle {
 		/**
 		 * \brief Параметризованный конструктор
 		 */
-		vehicle(const double speed, const std::string mark, const int pas);
+		vehicle(const double speed, const std::string& mark, const int pas);
 
 		/**
 		 * \brief Деструктор
@@ -61,7 +61,7 @@ class vehicle {
 		/**
 		 * \brief сеттер названия марки
 		 */
-		void set_mark(const std::string mark);
+		void set_mark(const std::string& mark);
 
 		/**
 		 * \brief сеттер кол-ва пассажиров
@@ -92,7 +92,7 @@ class bicycle : public vehicle {
 		/**
 		 * \brief Параметризованный конструктор
 		 */
-		bicycle(const double speed, const std::string mark, const int pas);
+		bicycle(const double speed, const std::string& mark, const int pas);
 
 		/**
 		 * \brief Деструктор
@@ -118,7 +118,7 @@ class car : public vehicle {
 		/**
 		 * \brief Параметризованный конструктор
 		 */
-		car(const double speed, const std::string mark, const int pas, const double ratio);
+		car(const double speed, const std::string& mark, const int pas, const double ratio);
 
 		/**
 		 * \brief Деструктор
@@ -166,7 +166,7 @@ public:
 	/**
 	 * \brief Параметризованный конструктор
 	 */
-	lorry(const double speed, const std::string mark, const int pas, const double ratio, const double load_capacity);
+	lorry(const double speed, const std::string& mark, const int pas, const double ratio, const double load_capacity);
 
 	/**
 	 * \brief Деструктор
