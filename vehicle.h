@@ -31,7 +31,7 @@ class vehicle {
 		/**
 		 * \brief Параметризованный конструктор
 		 */
-		vehicle(const double speed, const std::string mark, const int pas);
+		vehicle(const double speed, const std::string& mark, const int pas);
 
 		/**
 		 * \brief Деструктор
@@ -56,7 +56,7 @@ class vehicle {
 		/**
 		 * \brief сеттер значения скорости
 		 */
-		void set_speed(const double& speed);
+		void set_speed(const double speed);
 
 		/**
 		 * \brief сеттер названия марки
@@ -66,7 +66,7 @@ class vehicle {
 		/**
 		 * \brief сеттер кол-ва пассажиров
 		 */
-		void set_pas(const int& pas);
+		void set_pas(const int pas);
 
 		/**
 		 * \brief вычисление времени движения на заданное расстояние
@@ -92,7 +92,7 @@ class bicycle : public vehicle {
 		/**
 		 * \brief Параметризованный конструктор
 		 */
-		bicycle(const double speed, const std::string mark, const int pas);
+		bicycle(const double speed, const std::string& mark, const int pas);
 
 		/**
 		 * \brief Деструктор
@@ -118,7 +118,7 @@ class car : public vehicle {
 		/**
 		 * \brief Параметризованный конструктор
 		 */
-		car(const double speed, const std::string mark, const int pas, const double ratio);
+		car(const double speed, const std::string& mark, const int pas, const double ratio);
 
 		/**
 		 * \brief Деструктор
@@ -140,7 +140,7 @@ class car : public vehicle {
 		/**
 		 * \brief Сеттер коэффициента расхода топлива
 		 */
-		void set_ratio(const double& ratio);
+		void set_ratio(const double ratio);
 };
 
 class lorry : public vehicle {
@@ -166,7 +166,7 @@ public:
 	/**
 	 * \brief Параметризованный конструктор
 	 */
-	lorry(const double speed, const std::string mark, const int pas, const double ratio, const double load_capacity);
+	lorry(const double speed, const std::string& mark, const int pas, const double ratio, const double load_capacity);
 
 	/**
 	 * \brief Деструктор
@@ -192,10 +192,10 @@ public:
 	/**
 	 * \brief Сеттер коэффициента расхода топлива
 	 */
-	void set_ratio(const double& ratio);
+	void set_ratio(const double ratio);
 
 	/**
 	 * \brief сеттер грузоподъемности
 	 */
-	void set_load_capacity(const double& load_capacity);
+	void set_load_capacity(const double load_capacity);
 };
